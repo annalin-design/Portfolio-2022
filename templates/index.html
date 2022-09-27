@@ -4,7 +4,7 @@
 
     <div class="row mt-5">
 	  <div class="col-sm-8">
-        <p>
+       <!-- <p>
             {% if time >=0 and time< 4: %}
             Good evening! You&rsquo;re still awake &#128064;
 
@@ -18,7 +18,7 @@
             Good evening &#10024;
 
             {% endif %}
-        </p>
+        </p>-->
       <h1>
         I&rsquo;m Anna, a designer based in Toronto. Currently at Sun Life Financial as a Digital Creative Designer.
       </h1>
@@ -33,11 +33,15 @@
     {% for i in project_list[::-1] %}
      <div class="row mt-5">
 	  <div class="col-sm-5">
-      <h2><a href="{{ url_for('projects', proj_num=i['id'])}}">{{i['Title']}}</a></h2>
-          <h3>{{i['Subtitle']}}</h3>
+          <a href="{{ url_for('projects', proj_num=i['id'])}}">
+            <h2>{{i['Title']}}</h2>
+            <h3 style=" font-size:24px;">{{i['Subtitle']}}</h3>
+          </a>
       </div>
      <div class="col-sm-7">
-         <img src="{{i['Thumbnail']}}" class="rounded img-fluid">
+         <a href="{{ url_for('projects', proj_num=i['id'])}}">
+            <img src="{{i['Thumbnail']}}" class="rounded img-fluid">
+         </a>
       </div>
      </div>
     <div class="row mt-5">
