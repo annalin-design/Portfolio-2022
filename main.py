@@ -1,14 +1,17 @@
 from flask import Flask, render_template, redirect, url_for
-from datetime import datetime
 from projs import project_list
+from datetime import datetime, timezone
+
 
 app = Flask(__name__)
 app.config['SECRET_KEY'] = '8BYkEfBA6O6donzWlSihBXox7C0sKR6b'
 
 @app.route("/")
 def home():
-    time = datetime.now().hour
-    return render_template("index.html", time=time, project_list=project_list)
+    # time = datetime.now().hour
+    utc_dt = datetime.now(timezone.utc)  # UTC time
+    dt = utc_dt.astimezone()  # local time
+    return render_template("index.html", time=dt.hour, project_list=project_list)
 
 
 @app.route("/projects/<int:proj_num>")
