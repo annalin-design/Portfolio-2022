@@ -1,0 +1,17 @@
+<div class="row mt-5">
+    <div class="col-sm-6 text-start">
+        {% if project_id < total_proj-1: %}
+        <a href="{{ url_for('projects', proj_num=project_id+1) }}">
+            <h4>← Previous: {{ project_list[project_id+1]['Title'] }}</h4>
+        </a>
+        {% endif %}
+    </div>
+
+    <div class="col-sm-6 text-end">
+        {% if not project_id==0: %}
+        <a href="{{ url_for('projects', proj_num=project_id-1) }}">
+            <h4>Next: {{ project_list[project_id-1]['Title'] }} →</h4>
+        </a>
+        {% endif %}
+    </div>
+</div>

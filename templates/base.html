@@ -1,0 +1,13 @@
+{% include 'header.html' %}
+{% include 'header_projects.html' %}
+
+
+<div class="row justify-content-center">
+    <div class="col-sm-8">
+        {% block text %}{% endblock %}
+    </div>
+</div>
+{% block content %}{% endblock %}
+
+{% include 'footer_nav.html' %}
+{% include 'footer.html' %}
