@@ -1,9 +1,5 @@
 from flask import Flask, render_template, redirect, url_for
-from flask_bootstrap import Bootstrap
 from datetime import datetime
-from flask_wtf import FlaskForm
-from wtforms import StringField, SubmitField, SelectField, validators
-from wtforms.validators import DataRequired
 from projs import project_list
 
 app = Flask(__name__)
