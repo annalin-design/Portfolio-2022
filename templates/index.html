@@ -2,7 +2,7 @@
 
 
 
-    <div class="row mt-5">
+    <div class="row mt-5 p-4">
 	  <div class="col-sm-8">
        <!-- <p>
             {% if time >=0 and time< 4: %}
@@ -26,25 +26,29 @@
     </div>
 
 
-    <div class="row mt-5">
+    <div class="row px-4 py-0">
         <span class="border-top border-dark border-3"></span>
     </div>
 
     {% for i in project_list[::-1] %}
-     <div class="row mt-5">
-	  <div class="col-sm-5">
-          <a href="{{ url_for('projects', proj_num=i['id'])}}">
-            <h2>{{i['Title']}}</h2>
-            <h3 style=" font-size:24px;">{{i['Subtitle']}}</h3>
-          </a>
+     <div class="row py-3">
+	  <div class="col-sm-5 px-5 py-3">
+
+            <a href="{{ url_for('projects', proj_num=i['id'])}}" >
+                <h2>{{i['Title']}}</h2>
+            </a>
+             <a href="{{ url_for('projects', proj_num=i['id'])}}" style="text-decoration:none;">
+                 <h3 class="subtitle">{{i['Subtitle']}}</h3>
+             </a>
+
       </div>
-     <div class="col-sm-7">
+     <div class="col-sm-7 px-4 py-3">
          <a href="{{ url_for('projects', proj_num=i['id'])}}">
             <img src="{{i['Thumbnail']}}" class="rounded img-fluid">
          </a>
       </div>
      </div>
-    <div class="row mt-5">
+    <div class="row px-4 py-0">
         <span class="border-top border-dark border-1"></span>
     </div>
     {% endfor %}

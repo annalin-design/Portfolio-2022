@@ -7,8 +7,8 @@ project_list = [
                   }
     ,
                   {
-                      "Title": "Azure Magazine Editorial",
-                      "Subtitle": "Select editorial pages designed for the awarding-winning magazine.",
+                      "Title": "Azure Magazine",
+                      "Subtitle": "Editorial design for the awarding-winning magazine.",
                       "Thumbnail": "static/images/editorial.jpg",
                       "id": 1,
                   }
@@ -22,8 +22,8 @@ project_list = [
               }
 ,
               {
-                  "Title": "Branded Youth Entrepreneurship Conference",
-                  "Subtitle": "Crafting a memorable visual experience.",
+                  "Title": "Branded Conference",
+                  "Subtitle": "Connecting youth entrepreneurs together, this time in person.",
                   "Thumbnail": "static/images/thumb-branded.jpg",
                   "id": 3,
               }

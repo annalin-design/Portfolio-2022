@@ -1,5 +1,5 @@
-<div class="row mt-5 justify-content-between">
-    <div class="col-sm-6 text-start">
+<div class="row px-3 pt-4 pb-2 justify-content-between ">
+    <div class="col-6 text-start">
         {% if project_id < total_proj-1: %}
         <a href="{{ url_for('projects', proj_num=project_id+1) }}">
             <h4>← Previous: {{ project_list[project_id+1]['Title'] }}</h4>
@@ -7,7 +7,7 @@
         {% endif %}
     </div>
 
-    <div class="col-sm-6 text-end">
+    <div class="col-6 text-end">
         {% if not project_id==0: %}
         <a href="{{ url_for('projects', proj_num=project_id-1) }}">
             <h4>Next: {{ project_list[project_id-1]['Title'] }} →</h4>

@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Fraunces:ital,wght@0,200;0,300;0,400;0,500;1,200;1,300;1,400&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,300;0,400;1,300&display=swap');
 
 
 
@@ -25,7 +25,8 @@ a{
     }
 
 a:hover{
-    font-style:italic
+    text-decoration:underline;
+
     }
 
 footer{
@@ -35,4 +36,10 @@ font-size:11px;
 .credits{
 font-size:12px;
 padding-top:10px;
+}
+
+.subtitle{
+font-family: 'IBM Plex Sans', sans-serif;
+font-weight:400;
+font-size:20px
 }
