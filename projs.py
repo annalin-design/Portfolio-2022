@@ -27,7 +27,13 @@ project_list = [
                   "Thumbnail": "static/images/thumb-branded.jpg",
                   "id": 3,
               }
-
+,
+              {
+                  "Title": "Sun Life Marketing Campaigns",
+                  "Subtitle": "Initiatives that drive clients and prospects to engage with an advisor",
+                  "Thumbnail": "static/images/thumb-sl.gif",
+                  "id": 4,
+              }
 
 
 ]

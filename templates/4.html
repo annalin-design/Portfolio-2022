@@ -1,0 +1,112 @@
+{% extends 'base.html' %}
+
+{% block text %}
+
+As the Digital Creative Designer at Sun Life, I support wealth, health and insurance marketing campaigns that engages with prospects and clients.
+ Working in an agile environment, I collaborate with marketing managers and copywriters to support various tactics on the digital platform, which includes designing social assets, email development, landing pages, and programmatic ads. All the assets come with the French equivalent, and sometimes in other languages as well.
+
+<!--Build innovative ways to engage prospects to encourage conversations with advisors.-->
+
+<!--Drive sales through wealth, health and insurance marketing campaigns driven by CEP.-->
+<!--Promote campaigns and initiatives through advisor communications.-->
+
+{% endblock %}
+{% block content%}
+
+<div class="row mt-5">
+    <div class="col">
+
+     <h3>Organic & Paid Socials</h3>
+
+    </div>
+
+</div>
+
+<div class="row">
+    {% for i in range(1,5) %}
+    <div class="col">
+
+        <video width="100%" height="auto" muted autoplay loop>
+          <source src="../static/video/SL/hearsay-{{i}}.mp4" type="video/mp4">
+         </video>
+
+    </div>
+    {% endfor %}
+
+</div>
+
+
+
+<div class="row mt-5">
+    <div class="col">
+
+        <video width="100%" height="auto" muted autoplay loop>
+          <source src="../static/video/SL/AC-1.mp4" type="video/mp4">
+         </video>
+
+    </div>
+
+    <div class="col">
+                <video width="100%" height="auto" muted autoplay loop>
+          <source src="../static/video/SL/AC-2.mp4" type="video/mp4">
+         </video>
+    </div>
+
+    <div class="col">
+                <video width="100%" height="auto" muted autoplay loop>
+          <source src="../static/video/SL/insurance-2.mp4" type="video/mp4">
+         </video>
+    </div>
+        <div class="col">
+                <video width="100%" height="auto" muted autoplay loop>
+          <source src="../static/video/SL/insurance-3.mp4" type="video/mp4">
+         </video>
+    </div>
+</div>
+
+<div class="row mt-5">
+    <div class="col">
+
+     <h3>Email Design & Development</h3>
+
+    </div>
+
+</div>
+
+<div class="row">
+    <div class="col">
+
+       <img src="../static/images/sl-emails.jpg" class="img-fluid">
+
+    </div>
+
+</div>
+
+<div class="row mt-5">
+    <div class="col">
+
+     <h3>Landing Page</h3>
+
+    </div>
+
+</div>
+
+<div class="row">
+    <div class="col">
+
+       <img src="../static/images/sl-lp.jpg" class="img-fluid">
+
+    </div>
+
+</div>
+
+
+<!--<div class="row mt-5 justify-content-center">-->
+<!--        <div class="col-3">-->
+
+<!--          <img src="../static/images/insurance-4.png" class="img-fluid">-->
+
+<!--    </div>-->
+<!--</div>-->
+
+{% endblock %}
